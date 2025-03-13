@@ -1,0 +1,587 @@
+
+* {
+    font: 10pt "DejaVu Sans Condensed";
+}
+
+QGroupBox {
+    border: none;
+    margin-top: 20px;
+    padding: 4px;
+    background: #e0e0e0;
+}
+
+QTableView {
+    font: 12pt "DejaVu Sans Mono"; 
+    
+}
+QHeaderView::section {
+    height: 30px;
+}
+
+QDialog QPushButton {
+    width: 100px;
+    height: 40px;
+}
+
+QPushButton {
+    background:  qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1, stop: 0 #f8f8f8, stop: 1 #f8f8f8);
+    border: 2px solid #d0d0d0;
+    border-radius: 4px;    
+}
+
+QPushButton:disabled {
+    background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1, stop: 0 rgba(208,208,208,0.5), stop: 1 rgba(208,208,208,0.5));
+}
+
+QPushButton:hover {
+    background:  qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1, stop: 0 #d0d0d0, stop: 1 #d0d0d0);
+}
+
+QPushButton:pressed {
+    background:  qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1, stop: 0 white, stop: 1 white);
+}
+
+
+#buttonShutdown,
+#buttonQuit {
+    border: 2px solid rgba(128,32,32,0.4);
+    color: #7f0000;
+}
+
+QToolButton QMenu {
+    font-size: 24pt;
+}
+
+QToolButton QMenu:hover {
+    font-size: 24pt;
+}
+
+#lineSpindleSpeed,
+#lineToolNumber {
+    font: 20pt "Noto Sans Mono Bold";
+}
+
+#lineSpindleSpeed[isPendingValue=true],
+#lineToolNumber[isPendingValue=true] {
+    background: cyan;
+}
+
+#lineSpindleSpeed[isPendingValue=false],
+#lineToolNumber[isPendingValue=false] {
+    background: none;
+}
+
+
+
+
+#statusFCodes,
+#statusGCodes,
+#statusMCodes {
+    font: 12pt "Noto Sans Mono";
+}
+
+#statusMCodes {
+    font-weight: 900;
+}
+
+#statusToolNumber {
+    font: 16pt "Noto Sans Mono";
+    font-weight: 300;
+    color: blue;
+}
+
+#statusToolLength {
+    font: 14pt "Noto Sans Mono";
+    font-weight: 100;
+    color: darkblue;
+}
+
+#statusToolComment {
+    font: 12pt "Noto Sans Bold";
+    font-weight: 300;
+    color: gray;
+}
+
+
+#statusSpindleRequestedSpeed,
+#statusSpindleActualSpeed {
+    font: 12pt "Noto Sans Mono";
+    font-weight: 300;
+}
+
+
+#actionButtonHomeAll {
+    border-color: #2277ff;
+}
+
+#actionButtonSpindleSlower,
+#actionButtonSpindleFaster {
+    font: 18pt "FontAwesome";
+    color: black;
+}
+
+QSlider::groove:horizontal {
+    border: 1px solid #bbb;
+    background: white;
+    height: 5px;
+    border-radius: 4px;
+}
+
+QSlider::sub-page:horizontal {
+    border: 1px solid #777;
+    height: 10px;
+    border-radius: 4px;
+    background: #777;
+}
+
+QSlider::add-page:horizontal {
+    background: #fff;
+    border: 1px solid #777;
+    height: 10px;
+    border-radius: 4px;
+}
+
+QSlider::handle:horizontal {
+    border: 1px solid #777;
+    width: 20px;
+    margin-top: -15px;
+    margin-bottom: -15px;
+    border-radius: 4px;
+    background: #ddd;
+}
+
+#statusSliderJog::handle:horizontal  {
+    border: 2px solid #0000ff;
+    width: 20px;
+    margin-top: -15px;
+    margin-bottom: -15px;
+    border-radius: 4px;
+    background: #ddd;
+}
+
+
+QSlider::handle:horizontal:hover {
+    background: #eee;
+    border: 1px solid #444;
+    border-radius: 4px;
+}
+
+QSlider::sub-page:horizontal:disabled {
+    background: #bbb;
+    border-color: #999;
+}
+
+QSlider::add-page:horizontal:disabled {
+    background: #eee;
+    border-color: #999;
+}
+
+QSlider::handle:horizontal:disabled {
+    background: #eee;
+    border: 1px solid #aaa;
+    border-radius: 4px;
+    min-height: 30px;
+}
+
+QProgressBar {
+    border: 1px solid #76797C;
+    text-align: center;
+    color: black;
+}
+
+QProgressBar::chunk {
+    background-color: lightgreen;
+}
+
+
+QTabWidget::pane {
+    margin: 2px;
+    border 1px solid black;
+}
+QTabBar::tab {
+    background: #e7e7e7;
+    min-width: 14ex;
+    min-height: 6ex;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    margin-right: 2px;
+    padding-right: 8px;
+    padding-left: 4px;
+    border-left: 4px solid #e7e7e7;
+    font: 14px "DejaVu Sans Condensed";
+    font-weight: 300;
+}
+
+QTabBar::tab:selected,
+QTabBar::tab:hover {
+    border-left: 4px solid #333333;
+}
+
+QTabBar::tab:selected {
+    background: #ffffff;
+    border-left: 4px solid blue;
+    color: blue;
+    font-weight: 500;
+}
+
+#machinelog {
+    font: 12pt 'Noto Sans Mono';
+    font-weight: 200;
+
+}
+
+EditorBase {
+    background: white;
+    qproperty-styleColorBackground: #f0f0f0;
+
+    qproperty-styleColorMarginText: #000000;
+    qproperty-styleColorMarginBackground: #ccccdd;
+
+    qproperty-styleColorCursor: gray;
+    qproperty-styleColorMarkerBackground: rgba(34, 134, 228, 0.589);
+
+    /* default */
+    qproperty-styleColor0: black;
+    qproperty-styleFont0: "DejaVu Sans Mono,11,-1,5,90,0,0,1,1,0";
+    /* comment */
+    qproperty-styleColor1: gray;
+    qproperty-styleFont1: "Noto Sans Mono Bold,11,-1,5,90,0,0,1,1,0";
+    /* G code */
+    qproperty-styleColor2: darkcyan;
+    qproperty-styleFont2: "DejaVu Sans Mono,11,-1,5,90,0,0,1,1,0";
+    /* M code */
+    qproperty-styleColor3: darkred;
+    qproperty-styleFont3: "DejaVu Sans Mono,11,-1,5,90,0,0,1,1,0";
+    /* Axis */
+    qproperty-styleColor4: blue;
+    qproperty-styleFont4: "DejaVu Sans Mono,11,-1,5,90,0,0,1,1,0";
+    /* Other */
+    qproperty-styleColor5: green;
+    qproperty-styleFont5: "DejaVu Sans Mono,11,-1,5,90,0,0,1,1,0";
+    /* Axis Value */
+    qproperty-styleColor6: darkblue;
+    qproperty-styleFont6: "DejaVu Sans Mono,11,-1,5,90,0,0,1,1,0";
+    /* Other Value */
+    qproperty-styleColor7: gray;
+    qproperty-styleFont7: "DejaVu Sans Mono,11,-1,5,90,0,0,1,1,0";
+
+    qproperty-styleColorSelectionText: white;
+    qproperty-styleColorSelectionBackground: darkblue;
+}
+
+QSpinBox {
+    padding-right: 15px;
+    /* make room for the arrows */
+    border-width: 3px;
+    height: 40px;
+}
+
+QSpinBox::down-button {
+    width: 20px;
+    height: 20px;
+}
+
+QSpinBox::down-arrow {
+    width: 20px;
+    height: 20px;
+}
+
+QSpinBox::up-button {
+    width: 20px;
+    height: 20px;
+}
+
+QSpinBox::up-arrow {
+    width: 20px;
+    height: 20px;
+}
+
+#frameDRO {
+    background: black;
+}
+
+DROLabel {
+    border: none;
+    font: 48pt "Lato Heavy";
+    color: #00CC22;
+    padding: 0px;
+    margin: 0px;
+}
+
+#statuslabel_dro_x,
+#statuslabel_dro_y,
+#statuslabel_dro_z,
+#statuslabel_dro_w {
+    border: none;
+    font: 15pt "Lato Heavy";
+    color: #D6D6D6;
+}
+
+
+#dro_axis_set_x,
+#dro_axis_set_y,
+#dro_axis_set_z,
+#dro_axis_set_w {
+    background: #2277ff;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+}
+
+#dro_axis_set_x:disabled,
+#dro_axis_set_y:disabled,
+#dro_axis_set_z:disabled,
+#dro_axis_set_w:disabled {
+    color: #777777;
+    background: transparent;
+}
+
+#dro_axis_set_x:pressed,
+#dro_axis_set_y:pressed,
+#dro_axis_set_z:pressed,
+#dro_axis_set_w:pressed {
+    background: #3388ff;
+    color: #ffffff;
+}
+
+#dro_home_x,
+#dro_home_y,
+#dro_home_z,
+#dro_home_w {
+    font: 20pt "FontAwesome";
+    border: none;
+}
+
+#dro_home_all {
+    border: none;
+}
+
+#dro_home_x[isHomed=true],
+#dro_home_y[isHomed=true],
+#dro_home_z[isHomed=true],
+#dro_home_w[isHomed=true],
+#dro_home_all[isAllHomed=true] {
+    color: #aaaaaa;
+    background-color: transparent;
+}
+
+#dro_home_x[isHomed=false],
+#dro_home_y[isHomed=false],
+#dro_home_z[isHomed=false],
+#dro_home_w[isHomed=false],
+#dro_home_all[isAllHomed=false]  {
+    background-color: #2277ff;
+    color: #cccccc;
+}
+
+
+#dro_home_x:pressed[isHomed=false],
+#dro_home_y:pressed[isHomed=false],
+#dro_home_z:pressed[isHomed=false],
+#dro_home_w:pressed[isHomed=false],
+#dro_home_all:pressed[isAllHomed=false] {
+    background-color: #3388ff;
+    color: #cccccc;
+}
+
+
+#dro_home_x:disabled,
+#dro_home_y:disabled,
+#dro_home_z:disabled,
+#dro_home_w:disabled,
+#dro_home_all:disabled[isAllHomed=false] {
+    background: transparent;
+    color: #777777;
+}
+
+#label_g5x_xx,
+#label_g5x_yy,
+#label_g5x_zz,
+#label_g5x_ww {
+    border: none;
+    font: 64pt "Lato Heavy";
+    color: #555555;
+
+}
+
+#dro_label_dtg_x,
+#dro_label_dtg_y,
+#dro_label_dtg_z,
+#dro_label_dtg_w {
+    border: none;
+    font: 20pt "Noto Sans Mono Bold";
+    padding-right: 5px;
+    padding-bottom: 20px;
+}
+
+#dro_label_dtg_x[isHomed=true],
+#dro_label_dtg_y[isHomed=true],
+#dro_label_dtg_z[isHomed=true],
+#dro_label_dtg_w[isHomed=true] {
+    color: #008800;
+}
+
+#dro_label_metric_imperial {
+    border: none;
+    font: 32pt "Lato Heavy";
+    color: cyan;
+}
+
+
+
+DROLabel[isHomed=false],
+#statuslabel_dro_x[isHomed=false],
+#statuslabel_dro_y[isHomed=false],
+#statuslabel_dro_z[isHomed=false],
+#statuslabel_dro_w[isHomed=false] {
+    color: #333333;
+}
+
+
+#widget_dro_x,
+#widget_dro_y,
+#widget_dro_z,
+#widget_dro_w {
+    background: #222222;
+    border: 2px solid black;
+}
+
+JogIncrements QAbstractItemView {
+    background-color: white;
+    color: black;
+}
+
+JogIncrements::item {
+    color: black;
+    height: 36px;
+    font-size: 24pt;
+}
+
+JogIncrements::item:selected {
+    background-color: orange;
+}
+
+#actionButtonJogXPlus,
+#actionButtonJogXMinus,
+#actionButtonJogYPlus,
+#actionButtonJogYMinus,
+#actionButtonJogZPlus,
+#actionButtonJogZMinus {
+    font: 24pt "Lato Heavy";
+    color: white;
+    border: 3px solid #2277ff;
+}
+
+#actionButtonJogIncr1,
+#actionButtonJogIncr2,
+#actionButtonJogIncr3,
+#actionButtonJogIncr4,
+#actionButtonJogSlow,
+#actionButtonJogMedium,
+#actionButtonJogFast {
+    color: white;
+    border: 3px solid #2277ff;
+}
+
+
+#actionButtonJogXPlus:disabled,
+#actionButtonJogXMinus:disabled,
+#actionButtonJogYPlus:disabled,
+#actionButtonJogYMinus:disabled,
+#actionButtonJogZPlus:disabled,
+#actionButtonJogZMinus:disabled,
+#actionButtonJogIncr1:disabled,
+#actionButtonJogIncr2:disabled,
+#actionButtonJogIncr3:disabled,
+#actionButtonJogIncr4:disabled,
+#actionButtonJogSlow:disabled,
+#actionButtonJogMedium:disabled,
+#actionButtonJogFast:disabled {
+    border: 3px solid #dddddd;
+    color: #cccccc;
+}
+
+#actionButtonJogXPlus:enabled,
+#actionButtonJogXMinus:enabled,
+#actionButtonJogYPlus:enabled,
+#actionButtonJogYMinus:enabled,
+#actionButtonJogZPlus:enabled,
+#actionButtonJogZMinus:enabled,
+#actionButtonJogIncr1:enabled,
+#actionButtonJogIncr2:enabled,
+#actionButtonJogIncr3:enabled,
+#actionButtonJogIncr4:enabled,
+#actionButtonJogSlow:enabled,
+#actionButtonJogMedium:enabled,
+#actionButtonJogFast:enabled {
+    background: #eeeeee;
+    border: 3px solid #2277ff;
+    color: #2277ff;
+}
+
+
+
+#actionButtonJogXPlus:hover,
+#actionButtonJogXMinus:hover,
+#actionButtonJogYPlus:hover,
+#actionButtonJogYMinus:hover,
+#actionButtonJogZPlus:hover,
+#actionButtonJogZMinus:hover,
+#actionButtonJogIncr1:hover,
+#actionButtonJogIncr2:hover,
+#actionButtonJogIncr3:hover,
+#actionButtonJogIncr4:hover,
+#actionButtonJogSlow:hover,
+#actionButtonJogMedium:hover,
+#actionButtonJogFast:hover {
+    background: #4499ff;
+    color: #eeeeee;
+}
+
+#actionButtonJogXPlus:pressed,
+#actionButtonJogXMinus:pressed,
+#actionButtonJogYPlus:pressed,
+#actionButtonJogYMinus:pressed,
+#actionButtonJogZPlus:pressed,
+#actionButtonJogZMinus:pressed,
+#actionButtonJogIncr1:pressed,
+#actionButtonJogIncr2:pressed,
+#actionButtonJogIncr3:pressed,
+#actionButtonJogIncr4:pressed,
+#actionButtonJogSlow:pressed,
+#actionButtonJogMedium:pressed,
+#actionButtonJogFast:pressed {
+    background: #3388ff;
+    color: white;
+}
+
+
+
+#actionButtonJogYPlus {
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+#actionButtonJogYMinus {
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+#actionButtonJogXPlus {
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+#actionButtonJogXMinus {
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+#actionButtonJogZPlus {
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+#actionButtonJogZMinus {
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+

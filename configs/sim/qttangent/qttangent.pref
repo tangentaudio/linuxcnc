@@ -1,0 +1,112 @@
+[DIALOG_GEOMETRY]
+AboutDialog-geometry = half
+LncMessage-geometry = 910 528 300 120
+ToolChangeDialog-geometry = default
+basicProbeHelpDialog-geometry = default
+
+[DIALOG_OPTIONS]
+EntryDialog_play_sound = True
+EntryDialog_sound_type = READY
+toolDialog_play_sound = True
+toolDialog_speak = True
+toolDialog_sound_type = READY
+KeyboardDialog_play_sound = True
+KeyboardDialog_sound_type = READY
+CalculatorDialog_play_sound = True
+CalculatorDialog_sound_type = READY
+MachineLogDialog_play_sound = True
+MachineLogDialog_sound_type = READY
+RunFromLineDialog_play_sound = True
+RunFromLineDialog_sound_type = READY
+
+[SCREEN_OPTIONS]
+overlay_play_sound = False
+overlay_sound_type = RING
+catch_errors = True
+desktop_notify = False
+notify_max_msgs = 10
+shutdown_check = True
+sound_player_on = False
+MainWindow-geometry = 0 0 1920 1086
+
+[ORIGINOFFSET_SYSTEM_NAMES]
+__dialogOffsetViewWidget-G54 = User System 1
+__dialogOffsetViewWidget-G55 = User System 2
+__dialogOffsetViewWidget-G56 = User System 3
+__dialogOffsetViewWidget-G57 = User System 4
+__dialogOffsetViewWidget-G58 = User System 5
+__dialogOffsetViewWidget-G59 = User System 6
+__dialogOffsetViewWidget-G59.1 = User System 7
+__dialogOffsetViewWidget-G59.2 = User System 8
+__dialogOffsetViewWidget-G59.3 = User System 9
+originoffsetview-G54 = User System 1
+originoffsetview-G55 = User System 2
+originoffsetview-G56 = User System 3
+originoffsetview-G57 = User System 4
+originoffsetview-G58 = User System 5
+originoffsetview-G59 = User System 6
+originoffsetview-G59.1 = User System 7
+originoffsetview-G59.2 = User System 8
+originoffsetview-G59.3 = User System 9
+
+[CALCULATOR]
+constValuesList = None
+onShowBehavior = None
+
+[MCH_MSG_OPTIONS]
+mchnMsg_play_sound = True
+mchnMsg_speak_errors = False
+mchnMsg_speak_text = True
+mchnMsg_sound_type = ATTENTION
+
+[USR_MSG_OPTIONS]
+usermsg_play_sound = True
+userMsg_sound_type = ATTENTION
+userMsg_use_focusOverlay = True
+
+[SHUTDOWN_OPTIONS]
+shutdown_play_sound = True
+shutdown_alert_sound_type = READY
+shutdown_exit_sound_type = LOGOUT
+shutdown_msg_title = Do you want to Shutdown now?
+shutdown_msg_focus_text = 
+shutdown_msg_detail = 
+
+[NOTIFY_OPTIONS]
+notify_start_greeting = False
+notify_start_title = Welcome
+notify_start_detail = This option can be changed in the preference file
+notify_start_timeout = 5
+
+[SCREEN_CONTROL_LAST_SETTING]
+previewWidget-user-view = p
+previewWidget-user-zoom = 10.0
+previewWidget-user-panx = 0.0
+previewWidget-user-pany = 0.0
+previewWidget-user-lat = 0.0
+previewWidget-user-lon = 0.0
+
+[PROBE OPTIONS]
+Probe tool = -1
+Probe diameter = 4
+Probe rapid = 10
+Probe feed = 10
+Probe search = 10
+Probe max travel = 10
+Probe max z = 2
+Probe extra depth = 0
+Probe step off = 10
+Probe xy clearance = 10
+Probe z clearance = 10
+Probe edge width = 10
+Calibration offset = 0
+Cal x width = 0
+Cal y width = 0
+Cal diameter = 0
+
+[BOOK_KEEPING]
+last_loaded_directory = /home/steve/devel/linuxcnc-bridgeport/configs/nc_files
+style_QSS_Path = DEFAULT
+
+[FILEMANAGER_JUMPLIST]
+
