@@ -136,8 +136,12 @@ class StateLED(LED):
 
     def change_state(self, state):
         super(StateLED, self).change_state(state)
+        #print(f"change_state: {self._halpin_name}")
         if self._halpin_option:
-            self.hal_pin.set(state)
+            try:
+                self.hal_pin.set(state)
+            except Exception as e:
+                print(f"Exception in state_led change_state: {e}")
 
     def joint_homed(self, joint):
         if int(joint) == self.joint_number:
